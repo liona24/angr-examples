@@ -10,7 +10,7 @@ code 0.
 p = angr.Project("test2", auto_load_libs=False)
 
 flag_addr = p.loader.find_symbol("flag").rebased_addr
-print("Flag @", hex(flag))
+print("Flag @", hex(flag_addr))
 
 flag_size = 0xd
 
